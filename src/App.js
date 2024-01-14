@@ -22,6 +22,13 @@ const tempMovieData = [
     Poster:
       "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg",
   },
+  {
+    imdbID: "tt6751668",
+    Title: "Parasite 2",
+    Year: "2021",
+    Poster:
+      "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg",
+  },
 ];
 
 const tempWatchedData = [
@@ -44,6 +51,16 @@ const tempWatchedData = [
     runtime: 116,
     imdbRating: 8.5,
     userRating: 9,
+  },
+  {
+    imdbID: "tt0088763",
+    Title: "Back to the Future 2",
+    Year: "1987",
+    Poster:
+      "https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+    runtime: 129,
+    imdbRating: 8.5,
+    userRating: 8.6,
   },
 ];
 
