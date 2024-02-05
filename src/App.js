@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { tempMovieData } from "./data";
+import { tempWatchedData } from "./data";
 
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
@@ -19,7 +20,7 @@ export default function App() {
     <>
       <nav className='nav-bar'>
         <div className='logo'>
-          <span role='img'>🍿</span>
+          <span role='img'>🍿🍿</span>
           <h1>usePopcorn</h1>
         </div>
         <input
