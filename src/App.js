@@ -27,7 +27,7 @@ function NavBar({ movies }) {
 function Logo() {
   return (
     <div className='logo'>
-      <span role='img'>🍿🍿</span>
+      <span role='img'>🍿</span>
       <h1>usePopcorn</h1>
     </div>
   );
@@ -52,10 +52,10 @@ function NumResult({ movies }) {
   );
 }
 
-function Main() {
+function Main({ movies }) {
   return (
     <main className='main'>
-      <ListBox />
+      <ListBox movies={movies} />
       <WatchedBox />
     </main>
   );
