@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Children, useState } from "react";
 import { tempMovieData } from "./data";
 import { tempWatchedData } from "./data";
 
@@ -9,18 +9,20 @@ export default function App() {
   const [movies, setMovies] = useState(tempMovieData);
   return (
     <>
-      <NavBar movies={movies} />
+      <NavBar>
+        <Search />
+        <NumResult movies={movies} />
+      </NavBar>
       <Main movies={movies} />
     </>
   );
 }
 
-function NavBar({ movies }) {
+function NavBar({ Children }) {
   return (
     <nav className='nav-bar'>
       <Logo />
-      <Search />
-      <NumResult movies={movies} />
+      {Children}
     </nav>
   );
 }
@@ -32,6 +34,14 @@ function Logo() {
     </div>
   );
 }
+function NumResult({ movies }) {
+  return (
+    <p className='num-results'>
+      Found <strong>{movies.length}</strong> results
+    </p>
+  );
+}
+
 function Search() {
   const [query, setQuery] = useState("");
   return (
@@ -42,13 +52,6 @@ function Search() {
       value={query}
       onChange={(e) => setQuery(e.target.value)}
     />
-  );
-}
-function NumResult({ movies }) {
-  return (
-    <p className='num-results'>
-      Found <strong>{movies.length}</strong> results
-    </p>
   );
 }
 
