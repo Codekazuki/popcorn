@@ -10,6 +10,7 @@ export default function App() {
   return (
     <>
       <NavBar>
+        <Logo />
         <Search />
         <NumResult movies={movies} />
       </NavBar>
@@ -18,13 +19,8 @@ export default function App() {
   );
 }
 
-function NavBar({ Children }) {
-  return (
-    <nav className='nav-bar'>
-      <Logo />
-      {Children}
-    </nav>
-  );
+function NavBar({ children }) {
+  return <nav className='nav-bar'>{children}</nav>;
 }
 function Logo() {
   return (
