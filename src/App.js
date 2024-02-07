@@ -1,4 +1,4 @@
-import { Children, useState } from "react";
+import { useState } from "react";
 import { tempMovieData } from "./data";
 import { tempWatchedData } from "./data";
 
