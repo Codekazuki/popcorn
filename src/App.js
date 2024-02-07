@@ -177,6 +177,3 @@ function WatchedMovie({ movie }) {
     </li>
   );
 }
-function Test() {
-  return <h2>Test</h2>;
-}
