@@ -161,22 +161,23 @@ function WatchedMoviesList({ watched }) {
   );
 }
 function WatchedMovie({ movie }) {
+  const { Poster, Title, imdbRating, runtime, userRating } = movie;
   return (
     <li>
-      <img src={movie.Poster} alt={`${movie.Title} poster`} />
-      <h3>{movie.Title}</h3>
+      <img src={Poster} alt={`${Title} poster`} />
+      <h3>{Title}</h3>
       <div>
         <p>
           <span>⭐️</span>
-          <span>{movie.imdbRating}</span>
+          <span>{imdbRating}</span>
         </p>
         <p>
           <span>🌟</span>
-          <span>{movie.userRating}</span>
+          <span>{userRating}</span>
         </p>
         <p>
           <span>⏳</span>
-          <span>{movie.runtime} min</span>
+          <span>{runtime} min</span>
         </p>
       </div>
     </li>
