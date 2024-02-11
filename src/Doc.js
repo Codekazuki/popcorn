@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Form() {
+export default function Doc() {
   const [answer, setAnswer] = useState("");
   const [error, setError] = useState(null);
   const [status, setStatus] = useState("typing");
