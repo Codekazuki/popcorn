@@ -31,7 +31,15 @@ export default function App() {
 function NavBar({ children }) {
   return <nav className='nav-bar'>{children}</nav>;
 }
-
+function Logo() {
+  return (
+    <div className='logo'>
+      <span role='img'>🍿</span>
+      <Stars />
+      <h1>usePopcorn</h1>
+    </div>
+  );
+}
 function NumResult({ movies }) {
   return (
     <p className='num-results'>
