@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: yellow;
+  font-size: clamp(0.8rem, 2vw, 3rem);
+}
 .nav {
   display: flex;
   justify-content: space-around;
@@ -12,4 +16,29 @@
 li {
   list-style: none;
   font-style: italic;
+}
+@media (min-width: 320px) {
+  .nav {
+    background-color: green;
+  }
+}
+@media (min-width: 375px) {
+  .nav {
+    background-color: rgb(0, 11, 128);
+  }
+}
+@media (min-width: 425px) {
+  .nav {
+    background-color: rgb(128, 49, 0);
+  }
+}
+@media (min-width: 768px) {
+  .nav {
+    background-color: rgb(128, 0, 115);
+  }
+}
+@media (min-width: 1024px) {
+  .nav {
+    background-color: rgb(128, 0, 0);
+  }
 }
