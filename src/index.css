@@ -17,6 +17,25 @@ li {
   list-style: none;
   font-style: italic;
 }
+.about {
+  background-color: indigo;
+}
+.service {
+  background-color: black;
+  color: white;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+a {
+  text-decoration: none;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: pink;
+}
 @media (min-width: 320px) {
   .nav {
     background-color: green;
