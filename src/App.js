@@ -5,13 +5,13 @@ import Services from "./Services";
 
 export default function App() {
   return (
-    <>
+    <section className='all'>
       <Nav />
       <section className='main'>
         <About />
         <Services />
       </section>
       <Footer />
-    </>
+    </section>
   );
 }

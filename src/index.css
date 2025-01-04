@@ -3,9 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: yellow;
+.all {
   font-size: clamp(0.8rem, 2vw, 3rem);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .nav {
   display: flex;
@@ -35,6 +37,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   background-color: pink;
+  margin-top: auto;
 }
 @media (min-width: 320px) {
   .nav {
