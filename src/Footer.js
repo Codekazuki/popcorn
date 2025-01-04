@@ -3,11 +3,11 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <a href='#'>hello</a>
-      <a href='#'>peace</a>
-      <a href='#'>lorem</a>
-      <a href='#'>greatness</a>
-      <a href='#'>mercy</a>
+      <a href='www.google.com'>hello</a>
+      <a href='www.google.com'>peace</a>
+      <a href='www.google.com'>lorem</a>
+      <a href='www.google.com'>greatness</a>
+      <a href='www.google.com'>mercy</a>
     </footer>
   );
 };
